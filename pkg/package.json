@@ -1,10 +1,10 @@
 {
-  "name": "hello-wasm",
+  "name": "@mentorkadriu/hello-wasm",
   "collaborators": [
     "Mentor Kadriu <mentor.kadriu@gmail.com>"
   ],
   "description": "A sample project with wasm-pack",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "repository": {
     "type": "git",

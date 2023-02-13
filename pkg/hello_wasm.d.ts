@@ -1,6 +1,11 @@
 /* tslint:disable */
 /* eslint-disable */
 /**
-* @param {string} name
 */
-export function greet(name: string): void;
+export function greet(): void;
+/**
+* @param {number} a
+* @param {number} b
+* @returns {number}
+*/
+export function add(a: number, b: number): number;
