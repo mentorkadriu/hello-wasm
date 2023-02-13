@@ -4,11 +4,7 @@ export function __wbg_set_wasm(val) {
 }
 
 
-const lTextDecoder = typeof TextDecoder === 'undefined' ? (0, module.require)('util').TextDecoder : TextDecoder;
-
-let cachedTextDecoder = new lTextDecoder('utf-8', { ignoreBOM: true, fatal: true });
-
-cachedTextDecoder.decode();
+let WASM_VECTOR_LEN = 0;
 
 let cachedUint8Memory0 = null;
 
@@ -18,12 +14,6 @@ function getUint8Memory0() {
     }
     return cachedUint8Memory0;
 }
-
-function getStringFromWasm0(ptr, len) {
-    return cachedTextDecoder.decode(getUint8Memory0().subarray(ptr, ptr + len));
-}
-
-let WASM_VECTOR_LEN = 0;
 
 const lTextEncoder = typeof TextEncoder === 'undefined' ? (0, module.require)('util').TextEncoder : TextEncoder;
 
@@ -87,8 +77,4 @@ export function greet(name) {
     const len0 = WASM_VECTOR_LEN;
     wasm.greet(ptr0, len0);
 }
-
-export function __wbg_alert_8755b7883b6ce0ef(arg0, arg1) {
-    alert(getStringFromWasm0(arg0, arg1));
-};
 

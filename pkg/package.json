@@ -1,14 +1,14 @@
 {
-  "name": "@mentorkadriu/hello-wasm",
+  "name": "hello-wasm",
   "collaborators": [
     "Mentor Kadriu <mentor.kadriu@gmail.com>"
   ],
   "description": "A sample project with wasm-pack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mentorkadriu/hello-wasm.git"
+    "url": "https://github.com/mentorkadriu/hello-wasm"
   },
   "files": [
     "hello_wasm_bg.wasm",
@@ -18,18 +18,5 @@
   ],
   "module": "hello_wasm.js",
   "types": "hello_wasm.d.ts",
-  "sideEffects": false,
-  "bugs": {
-    "url": "https://github.com/mentorkadriu/hello-wasm/issues"
-  },
-  "homepage": "https://github.com/mentorkadriu/hello-wasm#readme",
-  "main": "hello_wasm.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "wasm",
-    "greet"
-  ],
-  "author": "Mentor Kadriu"
+  "sideEffects": false
 }
